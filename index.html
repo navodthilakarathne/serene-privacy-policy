@@ -39,9 +39,7 @@ body {
     min-height:90vh;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     text-align:center;
@@ -228,6 +226,7 @@ h2 {
 
 
 
+
 /* APP INFO */
 
 
@@ -257,6 +256,42 @@ h2 {
 
 
 
+
+/* PRIVACY BUTTON */
+
+
+.privacy-button {
+
+    display:inline-block;
+
+    background:#f4a083;
+
+    color:#17152e;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.privacy-button:hover {
+
+    background:#ffd0c0;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
 /* FOOTER */
 
 
@@ -273,13 +308,6 @@ footer {
 }
 
 
-footer a {
-
-    color:#f4a083;
-
-}
-
-
 </style>
 
 </head>
@@ -290,7 +318,9 @@ footer a {
 
 <!-- HERO -->
 
+
 <section class="hero">
+
 
 <div class="hero-content">
 
@@ -324,6 +354,7 @@ Download on Google Play
 
 </div>
 
+
 </section>
 
 
@@ -331,6 +362,7 @@ Download on Google Play
 
 
 <!-- FEATURES -->
+
 
 <section>
 
@@ -434,30 +466,21 @@ personalized wellness features.
 
 <img src="Screenshot_20260917_195117.jpg">
 
-
 <img src="Screenshot_20260917_195125.jpg">
-
 
 <img src="Screenshot_20260917_195134.jpg">
 
-
 <img src="Screenshot_20260917_195234.jpg">
-
 
 <img src="Screenshot_20260917_195319.jpg">
 
-
 <img src="Screenshot_20260917_195335.jpg">
-
 
 <img src="Screenshot_20260917_195445.jpg">
 
-
 <img src="Screenshot_20260917_195457.jpg">
 
-
 <img src="Screenshot_20260917_195633.jpg">
-
 
 <img src="Screenshot_20260917_202019.jpg">
 
@@ -568,8 +591,7 @@ Privacy
 <p>
 
 Serene respects your privacy.
-For information about data handling and privacy practices,
-please read our privacy policy.
+Learn how your information is handled and how we protect your data.
 
 </p>
 
@@ -577,9 +599,10 @@ please read our privacy policy.
 <br>
 
 
-<a href="privacy-policy.html">
+<a href="privacy-policy.html"
+class="privacy-button">
 
-Read Privacy Policy
+View Privacy Policy
 
 </a>
 
@@ -593,14 +616,16 @@ Read Privacy Policy
 
 
 
+
+
 <footer>
 
 <p>
 © 2026 Serene: Mindful Soundscapes
 </p>
 
-
 </footer>
+
 
 
 </body>
