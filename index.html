@@ -12,20 +12,21 @@
 
 * {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
 
 body {
+    background: linear-gradient(
+        180deg,
+        #10142f,
+        #202653
+    );
 
-    background:
-    linear-gradient(180deg,#10142f,#1c2148);
-
-    color:white;
-    line-height:1.6;
-
+    color: white;
+    line-height: 1.6;
 }
 
 
@@ -33,12 +34,15 @@ body {
 
 .hero {
 
-    min-height:90vh;
+    min-height: 90vh;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     text-align:center;
-    padding:40px;
+
+    padding:40px 20px;
 
 }
 
@@ -53,33 +57,41 @@ body {
 .logo {
 
     width:220px;
+
     border-radius:30px;
+
     margin-bottom:25px;
 
 }
 
 
+
 h1 {
 
-    font-size:60px;
-    letter-spacing:2px;
+    font-size:55px;
+
+    margin-bottom:15px;
 
 }
+
 
 
 .subtitle {
 
     font-size:22px;
-    opacity:0.9;
-    margin:20px 0;
+
+    color:#d9dcf5;
+
+    margin-bottom:30px;
 
 }
+
 
 
 .button {
 
     display:inline-block;
-    margin-top:25px;
+
     padding:15px 35px;
 
     background:#f4a083;
@@ -92,26 +104,38 @@ h1 {
 
     font-weight:bold;
 
+    transition:.3s;
+
 }
+
+
+.button:hover {
+
+    transform:scale(1.05);
+
+}
+
 
 
 
 /* FEATURES */
 
 
-.features {
+section {
 
-    padding:60px 10%;
+    padding:60px 8%;
 
 }
 
 
-.features h2,
-.screenshots h2 {
+
+h2 {
 
     text-align:center;
-    font-size:40px;
-    margin-bottom:30px;
+
+    font-size:38px;
+
+    margin-bottom:35px;
 
 }
 
@@ -132,35 +156,31 @@ h1 {
 
 .card {
 
-    background:#30355f;
+    background:
+    rgba(255,255,255,0.08);
 
     padding:30px;
 
     border-radius:25px;
 
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.25);
+    backdrop-filter:blur(10px);
 
 }
+
 
 
 .card h3 {
 
     color:#f4a083;
+
     margin-bottom:10px;
 
 }
 
 
 
+
 /* SCREENSHOTS */
-
-
-.screenshots {
-
-    padding:60px 5%;
-
-}
 
 
 .description {
@@ -171,9 +191,10 @@ h1 {
 
     margin:auto;
 
-    opacity:.85;
+    color:#d9dcf5;
 
 }
+
 
 
 .gallery {
@@ -183,18 +204,19 @@ h1 {
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
+    repeat(auto-fit,minmax(260px,1fr));
 
     gap:30px;
 
 }
 
 
+
 .gallery img {
 
     width:100%;
 
-    border-radius:30px;
+    border-radius:25px;
 
     box-shadow:
     0 20px 50px rgba(0,0,0,.4);
@@ -204,15 +226,45 @@ h1 {
 }
 
 
+
 .gallery img:hover {
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 
 }
 
 
 
-/* FOOTER */
+
+/* APP INFO */
+
+
+.info {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.info-box {
+
+    background:#30376b;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+
 
 
 footer {
@@ -223,7 +275,7 @@ footer {
 
     background:#101225;
 
-    opacity:.9;
+    color:#aaa;
 
 }
 
@@ -245,50 +297,50 @@ footer a {
 <body>
 
 
-
 <section class="hero">
-
 
 <div class="hero-content">
 
 
-<img class="logo"
-src="logo.png"
+<img src="logo.png"
+class="logo"
 alt="Serene Logo">
 
 
 <h1>
-Serene
+Serene: Mindful Soundscapes
 </h1>
 
 
 <p class="subtitle">
-Mindful Soundscapes for a calmer mind,
-focused moments and peaceful listening.
+
+Calm your mind. Relax your body.
+Create peaceful moments with immersive soundscapes.
+
 </p>
 
 
 <a class="button"
 href="https://play.google.com/store/apps/details?id=com.navod.serene">
 
-Get Serene on Google Play
+Download on Google Play
 
 </a>
 
 
 </div>
 
-
 </section>
 
 
 
 
-<section class="features">
+
+<section>
 
 
 <h2>
-Discover Serene
+Features
 </h2>
 
 
@@ -298,12 +350,11 @@ Discover Serene
 <div class="card">
 
 <h3>
-Adaptive Soundscapes
+🌙 Sleep Soundscapes
 </h3>
 
 <p>
-Personalized sound environments that adjust
-to your listening context.
+Relax with immersive sounds designed for peaceful listening and better rest.
 </p>
 
 </div>
@@ -313,26 +364,11 @@ to your listening context.
 <div class="card">
 
 <h3>
-Meditation Sessions
+🧘 Meditation
 </h3>
 
 <p>
-Breathing exercises and mindful audio experiences.
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-Binaural Beats
-</h3>
-
-<p>
-Create custom frequency-based sound experiences.
+Mindful sessions and calming experiences to support relaxation.
 </p>
 
 </div>
@@ -343,15 +379,29 @@ Create custom frequency-based sound experiences.
 <div class="card">
 
 <h3>
-Progress Tracking
+🎧 Custom Mixing
 </h3>
 
 <p>
-Track your mindful listening journey locally.
+Create personalised sound combinations and adjust your experience.
 </p>
 
 </div>
 
+
+
+
+<div class="card">
+
+<h3>
+🌿 Healing Frequencies
+</h3>
+
+<p>
+Explore different sound environments for focus and relaxation.
+</p>
+
+</div>
 
 
 </div>
@@ -363,7 +413,8 @@ Track your mindful listening journey locally.
 
 
 
-<section class="screenshots">
+
+<section>
 
 
 <h2>
@@ -373,9 +424,8 @@ Experience Serene
 
 <p class="description">
 
-Explore calming soundscapes, meditation,
-healing frequencies, custom mixes and
-personalized wellness features.
+Explore the app interface, soundscapes,
+meditation features and personalised wellness tools.
 
 </p>
 
@@ -384,39 +434,25 @@ personalized wellness features.
 <div class="gallery">
 
 
+<img src="Screenshot_20260917_195117.jpg">
 
-<img src="Screenshot_20260917_195434(1).jpg">
+<img src="Screenshot_20260917_195125.jpg">
 
+<img src="Screenshot_20260917_195134.jpg">
 
-<img src="Screenshot_20260917_195117(1).jpg">
+<img src="Screenshot_20260917_195234.jpg">
 
+<img src="Screenshot_20260917_195319.jpg">
 
-<img src="Screenshot_20260917_195335(1).jpg">
+<img src="Screenshot_20260917_195335.jpg">
 
+<img src="Screenshot_20260917_195445.jpg">
 
-<img src="Screenshot_20260917_195319(1).jpg">
+<img src="Screenshot_20260917_195457.jpg">
 
+<img src="Screenshot_20260917_195633.jpg">
 
-<img src="Screenshot_20260917_195234(1).jpg">
-
-
-<img src="Screenshot_20260917_195633(1).jpg">
-
-
-<img src="Screenshot_20260917_195445(1).jpg">
-
-
-<img src="Screenshot_20260917_202019(1).jpg">
-
-
-<img src="Screenshot_20260917_195457(1).jpg">
-
-
-<img src="Screenshot_20260917_195125(1).jpg">
-
-
-<img src="Screenshot_20260917_195134(1).jpg">
-
+<img src="Screenshot_20260917_202019.jpg">
 
 
 </div>
@@ -428,20 +464,128 @@ personalized wellness features.
 
 
 
-<footer>
+
+<section>
+
+
+<h2>
+App Information
+</h2>
+
+
+<div class="info">
+
+
+<div class="info-box">
+
+<b>Version</b>
+
+<br>
+
+1.0.0
+
+</div>
+
+
+<div class="info-box">
+
+<b>Updated</b>
+
+<br>
+
+21 September 2026
+
+</div>
+
+
+<div class="info-box">
+
+<b>Download Size</b>
+
+<br>
+
+41 MB
+
+</div>
+
+
+<div class="info-box">
+
+<b>Android</b>
+
+<br>
+
+7.0+
+
+</div>
+
+
+<div class="info-box">
+
+<b>Rating</b>
+
+<br>
+
+PEGI 3
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2>
+Privacy
+</h2>
+
+
+<div class="card">
 
 
 <p>
-© 2026 Serene. All rights reserved.
+
+Serene respects your privacy.
+For details about data handling and privacy practices,
+please view our privacy policy.
+
 </p>
 
 
-<p>
+<br>
 
-<a href="privacy-policy.html">
-Privacy Policy
+
+<a href="privacy-policy.html"
+style="color:#f4a083">
+
+Read Privacy Policy
+
 </a>
 
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Serene: Mindful Soundscapes
 </p>
 
 
